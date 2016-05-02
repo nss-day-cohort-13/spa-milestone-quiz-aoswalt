@@ -14,11 +14,12 @@
         <p><span class="car-label">Price</span>${car.price}</p>
         <p><span class="car-label">Color</span>${car.color}</p>
         <p><span class="car-label">Purchased</span>${car.purchased}</p>
-        <p><span class="car-label">Description</span>${car.description}</p>`;
+        <p><span class="car-label">Description</span><span class="car-desc">${car.description}</span></p>`;
       carlotDiv.appendChild(carCard);
     });
+    CarLot.resetStyles();
+    CarLot.activateEvents();
   }
 
   CarLot.loadInventory(populatePage);
 }());
-
