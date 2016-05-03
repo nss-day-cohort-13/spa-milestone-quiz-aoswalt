@@ -14,18 +14,20 @@
       }
 
       let car = inventory[carI];
-      let carCard = document.createElement("div");
-      carCard.className = "car-card col-xs-4";
-      carCard.innerHTML = `
-        <p><span class="car-label">Make</span>${car.make}</p>
-        <p><span class="car-label">Model</span>${car.model}</p>
-        <p><span class="car-label">Year</span>${car.year}</p>
-        <p><span class="car-label">Price</span>${car.price}</p>
-        <p><span class="car-label">Color</span>${car.color}</p>
-        <p><span class="car-label">Purchased</span>${car.purchased}</p>
-        <p><span class="car-label">Description</span><span class="car-desc">${car.description}</span></p>`;
-      row.appendChild(carCard);
-      carCard.style.borderColor = car.color;
+      let carCardContainer = document.createElement("div");
+      carCardContainer.className = "col col-xs-4";
+      carCardContainer.innerHTML = `
+        <div class="car-card">
+          <p><span class="car-label">Make</span>${car.make}</p>
+          <p><span class="car-label">Model</span>${car.model}</p>
+          <p><span class="car-label">Year</span>${car.year}</p>
+          <p><span class="car-label">Price</span>${car.price}</p>
+          <p><span class="car-label">Color</span>${car.color}</p>
+          <p><span class="car-label">Purchased</span>${car.purchased}</p>
+          <p><span class="car-label">Description</span><span class="car-desc">${car.description}</span></p>
+        </div>`;
+      row.appendChild(carCardContainer);
+      carCardContainer.children[0].style.borderColor = car.color;
     }
     CarLot.resetStyles();
     CarLot.activateEvents();
