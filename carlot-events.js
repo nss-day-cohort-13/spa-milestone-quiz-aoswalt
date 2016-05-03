@@ -1,4 +1,3 @@
-/* jshint devel:true */
 'use strict';
 
 var CarLot = (function(carlot) {
