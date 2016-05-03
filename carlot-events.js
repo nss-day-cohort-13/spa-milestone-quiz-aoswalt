@@ -7,7 +7,11 @@ var CarLot = (function(carlot) {
 
   carlot.activateEvents = function() {
     function cardClick(event) {
-      if(selectedCard !== event.currentTarget) {
+      if(selectedCard === event.currentTarget) {
+        carlot.resetStyles();
+        selectedCard.classList.remove("selected");
+        selectedCard = null;
+      } else {
         if(selectedCard) {
           carlot.resetStyles();
           selectedCard.classList.remove("selected");
