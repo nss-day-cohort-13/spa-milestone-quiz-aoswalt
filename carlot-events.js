@@ -18,7 +18,7 @@ var CarLot = (function(carlot) {
         }
 
         selectedCard = event.currentTarget;
-        carlot.addStyle(selectedCard, "blue");
+        carlot.addStyle(selectedCard, "lightblue");
         selectedCard.classList.add("selected");
       }
       descInput.value = "";
