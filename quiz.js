@@ -25,10 +25,10 @@
         carlotDiv.appendChild(clearFix);
       }
 
-      //NOTE(adam): clearfix for medium 3 column layout
+      //NOTE(adam): clearfix for medium+ 3 column layout
       if(carI % 3 === 2) {
         let clearFix = document.createElement("div");
-        clearFix.className = "clearfix visible-md-block";
+        clearFix.className = "clearfix visible-md-block visible-lg-block";
         carlotDiv.appendChild(clearFix);
       }
     }
