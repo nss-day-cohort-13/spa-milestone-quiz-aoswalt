@@ -17,6 +17,7 @@
         <p><span class="car-label">Purchased</span>${car.purchased}</p>
         <p><span class="car-label">Description</span><span class="car-desc">${car.description}</span></p>`;
       carlotDiv.appendChild(carCard);
+      carCard.style.borderColor = car.color;
 
       //NOTE(adam): clearfix for small 2 column layout
       if(carI % 2 === 1) {
