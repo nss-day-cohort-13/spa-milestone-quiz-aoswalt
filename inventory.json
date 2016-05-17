@@ -1,0 +1,40 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Tesla",
+      "model": "Roadster",
+      "year": "2008",
+      "price": "99999",
+      "color": "Black",
+      "purchased": true,
+      "description": "Tesla Motors' first production vehicle, the Tesla Roadster, an all-electric sports car."
+    },
+    {
+      "make": "Ferrari",
+      "model": "488 GTB",
+      "year": "2010",
+      "price": "89999",
+      "color": "Red",
+      "purchased": true,
+      "description": "A newer model Ferrari, what more needs to be said?"
+    },
+    {
+      "make": "BMW",
+      "model": "315i",
+      "year": "1990",
+      "price": "2999",
+      "color": "Silver",
+      "purchased": false,
+      "description": "A classic BMW that is fun yet practical."
+    }
+  ]
+}

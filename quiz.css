@@ -1,0 +1,25 @@
+body {
+  background: burlywood;
+}
+
+nav {
+  background: maroon;
+  padding: 2rem;
+}
+
+.col {
+  padding: 0 0.25rem;
+}
+
+.car-card {
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border-style: solid;
+  border-radius: 1.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.05rem rgba(0, 0, 0, 0.5);
+}
+
+.car-label {
+  font-weight: bold;
+  padding-right: 1rem;
+}
